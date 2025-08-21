@@ -40,7 +40,7 @@ html, body {
 }
 
 body {
-    background-image: url("/assets/images/bg.png");
+    background-image: url("assets/images/bg.png");
     background-color: #030303;
     font-family: 'Satoshi';
     font-weight: 300;
@@ -297,4 +297,5 @@ a.call:hover {
     
     font-size: 100px;
   }
+
 }

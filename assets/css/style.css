@@ -1,0 +1,300 @@
+::selection {
+    background-color: #a84909;
+    color: #fff;
+}
+* {
+  /*cursor:none;*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+html, body {
+    font-family: 'Satoshi';
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.oval-1 {
+    position: absolute;
+    z-index: -99;
+    border-radius: 50%;
+    background: #FF86B7;width: 567px;height: 326px;right: -20%;
+    animation-name: pulsate;
+    animation-duration: 20s;
+    animation-delay: 11s;
+    animation-iteration-count: infinite;
+}
+.oval-2 {
+    position: absolute;
+    z-index: -99;
+    border-radius: 50%;
+    background: #a84909;width: 1017px;height: 754px;left:-25%;bottom: -50%;
+    animation-name: pulsate;
+    animation-duration: 20s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+
+body {
+    background-image: url("/assets/images/bg.png");
+    background-color: #030303;
+    font-family: 'Satoshi';
+    font-weight: 300;
+    color: #fff;
+}
+p{
+    font-size:24px;
+}
+p, h3, h2, a{
+    text-decoration: none;
+    color: #fff;
+}
+h3{
+    font-size:32px;
+}
+h2{
+    font-size:36px;
+}
+section{
+    position: relative;
+    overflow: hidden;
+    padding: 50px;
+}
+.stars{
+    overflow: hidden;
+}
+.stars i{
+    position: absolute;
+    background: #fff;
+    z-index: -95;
+    border-radius: 50%;
+    animation: stars ease infinite;
+    opacity: 0;
+
+}
+@keyframes stars{
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.curved{
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 25px;
+    width: auto;
+    height: auto;
+}
+.img{
+    border-radius: 25px;
+    transition: box-shadow 0.5s ease, transform 0.5s ease
+}
+.img:hover{
+    transform: translateX(-10px);
+}
+.youtube{
+    width: 60%;
+    align-items: center;
+    margin:auto;
+    justify-content: center;
+}
+.meeting{
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    gap: 50px;
+    width: 60%;
+    display: flex;
+}
+.wistia-video {
+    border-radius: 25px;
+    overflow: hidden;
+    width: 60%;
+}
+.text-box{
+    width: 50%;
+}
+.bold{
+    font-family: 'Satoshi';
+    font-weight: bold;
+}
+.logo{
+    font-weight: normal;
+    font-size: 48px;
+}
+.construction{
+    font-family: 'Satoshi';
+    font-style: italic;
+    font-size:24px;
+    color:#C5C5C5;
+}
+.build{
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align:center
+}
+.blurry-div {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed; 
+    backdrop-filter: blur(1000px);
+    -webkit-backdrop-filter: blur(1000px);
+    z-index: -96;
+}
+.blurry-div-1 {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed; 
+  backdrop-filter: blur(150px);
+  -webkit-backdrop-filter: blur(150px);
+  z-index: -97;
+}
+a.call {
+    transition: letter-spacing 0.5s ease;
+}
+a.call:hover {
+    letter-spacing: 2px; 
+}
+.circle {
+  z-index: 9999;
+  position: fixed;
+  left: -100%;
+  top: -100%;
+  width: 25px;
+  height: 25px;
+  background: white;
+  border-radius: 50%;
+  pointer-events: none;
+  mix-blend-mode: difference;
+}
+.button{
+    font: 500 24px Satoshi, sans-serif;
+    color: #fff;
+    background: linear-gradient(40deg, #ae005e 0%, #ff6600 100%);
+    text-decoration: none;
+    padding: 20px 30px;
+    border: 0;
+    align-self: start;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 1.75rem;
+    transition: transform .25s ease;
+    
+}
+.button:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+.button-1{
+    font: 700 24px Satoshi, sans-serif;
+    color: #fff;
+    background: linear-gradient(40deg, #ae005e 0%, #ff6600 100%);
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 0;
+    align-self: start;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    transition: transform .25s ease;
+}
+.button-1:hover {
+  transform: translateX(-10px);
+}
+.reviews{
+    text-align: center;
+    padding-top: 150px;
+    gap: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+}
+
+@keyframes pulsate {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.calendly-inline-widget{
+  height:700px;
+}
+
+.div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 60px;
+}
+@media (max-width: 991px) {
+  .div {
+      text-align: center;
+    padding: 0 20px;
+  }
+  .calendly-inline-widget{
+    height:1500px;
+  }
+
+}
+.div-2 {
+  margin-top: 50px;
+  width: 100%;
+  max-width: 1547px;
+}
+@media (max-width: 991px) {
+  .div-2 {
+    max-width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .button{
+      margin-left: auto;
+       margin-right: auto;
+       font-size: 52px;
+       border-radius: 20px;
+       padding: 20px 40px;
+  }
+  
+}
+.div-5 {
+  display: flex;
+  text-align: center;
+  font: 400 48px Satoshi, sans-serif;
+  width: fit-content;
+  max-width: 100%;
+}
+@media (max-width: 991px) {
+  .div-5 {
+    
+    font-size: 100px;
+  }
+}

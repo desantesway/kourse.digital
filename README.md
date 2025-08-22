@@ -6,6 +6,12 @@ A fictional creative agency website built to learn and practice **HTML**, **CSS*
 
 ---
 
+## 📸 Screenshots
+
+<img width="3839" height="2159" alt="image" src="https://github.com/user-attachments/assets/68c0dc27-3be2-4f73-b0bf-a463bc592b0a" />
+
+---
+
 ## 📚 About the Project
 
 The goal of this project was to create a visually engaging and interactive website for a made-up digital agency named **kourse.digital**. This served as a learning platform to dive deeper into:
@@ -29,9 +35,7 @@ The goal of this project was to create a visually engaging and interactive websi
 - 💼 Clean, professional agency-style layout
 - 🧠 Learning-focused code structure and comments
 
-## 📸 Screenshots
-
-
+---
 
 ## 🚀 Getting Started
 
